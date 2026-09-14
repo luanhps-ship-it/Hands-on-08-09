@@ -2,8 +2,7 @@
 
 > <mark style="color:$warning;">Agora é sua vez de pensar como um programador.</mark>
 
-1. Crie um algoritmo que leia um número inteiro e mostre: https://portugol.dev/#share=fkny1ej
-
+1. Crie um algoritmo que leia um número inteiro e mostre:
 * o antecessor
 * o sucessor
 
@@ -60,3 +59,345 @@
     * informação se está matriculado (`logico`).
 
     Depois, exiba todos os dados organizados na tela.
+                                                         RESPOSTA
+  1   inteiro numero, antecessor, sucessor 
+     
+     escreva("coloque um numero inteiro: ")
+     leia(numero)
+     
+     antecessor = numero +1
+     sucessor = numero  -1
+
+     escreva("sucessor: " , numero  ,"" , " = " + sucessor + ".\n")
+     escreva("antecessor: " , numero , "" , " = "+ antecessor + ".\n")
+     
+  
+    =======================================================================================================================================
+  2    inteiro numero, dobro, triplo
+     escreva("coloque um numero inteiro: ")
+     leia(numero)
+     
+     dobro = numero *2
+     triplo = numero  *3
+
+       escreva("dobro: " + numero + " x ", 2 ," = " + dobro + ".\n")
+       escreva("triplo: " + numero + " x ", 3 ," = " + triplo + ".\n")
+
+
+ ==========================================================================================================================================
+3		real nota1, nota2, nota3, media
+
+		
+		escreva("Digite a primeira nota: ")
+		leia(nota1)
+
+		escreva("Digite a segunda nota: ")
+		leia(nota2)
+
+		escreva("Digite a terceira nota: ")
+		leia(nota3)
+
+		
+		media = (nota1 + nota2 + nota3) / 3
+
+	escreva("A média aritmética das notas é: ", media)
+
+
+==========================================================================================================================================
+4     * Variaveis: n1,n2
+     * Variavel de saida: Soma 
+     */
+      inteiro n1, n2, soma, multiplicacao, subtracao, divisao 
+      escreva("Informe um número: ")
+      leia(n1)
+      escreva("Informe outro número: ")
+      leia (n2)
+      soma = n1 + n2 
+      multiplicacao = n1 * n2 
+      subtracao = n1 - n2
+      divisao = n1 / n2 
+       
+     escreva("multiplicacao: " + n1 + " x " + n2 + " = " + multiplicacao + ".\n")
+     escreva("soma: " + n1 + " + " + n2 + " = " + soma + ".\n")
+     escreva("subtracao: " + n1 + " - " + n2 + " = "+ subtracao + ".\n")
+     escreva("divisao: " + n1 + " / " + n2 + " = " +divisao + ".\n")
+  
+
+ ========================================================================================================================================
+5		real celsius, fahrenheit
+  
+		escreva("Digite a temperatura em graus Celsius: ")
+		leia(celsius)
+	
+		fahrenheit = (celsius * 9 / 5) + 32
+
+		escreva("A temperatura em Fahrenheit é: ", fahrenheit, "°F")
+  }
+
+==========================================================================================================================================
+6			real raio, area
+		const real PI = 3.14
+
+		escreva("Digite o valor do raio: ")
+		leia(raio)
+		area = PI * raio * raio
+
+		escreva("A área do círculo é: ", area)
+======================================================================================================================================
+7real quilometro, litros, consumo_medio
+
+    escreva(" quantos quilometros voce andou? ")
+    leia(quilometro)
+
+    escreva ("quantos litros de gasolida foi usado? ")
+    leia(litros)
+    consumo_medio = quilometro / litros
+
+    escreva("O consumo medio e: ", consumo_medio,"km1" )
+==========================================================================================================================================
+8 real valor_compra, valor_desconto, valor_final
+		const real PERCENTUAL_DESCONTO = 10.0
+
+	
+		escreva("Digite o valor total da compra (R$): ")
+		leia(valor_compra)
+
+		
+		valor_desconto = valor_compra * (PERCENTUAL_DESCONTO / 100.0)
+		valor_final = valor_compra - valor_desconto
+
+	
+		escreva("\n--- Resumo da Compra (10% de Desconto) ---")
+		escreva("\nValor do desconto: R$ ", valor_desconto)
+		escreva("\nValor final da compra: R$ ", valor_final)
+==========================================================================================================================================
+ 9 real valorCompra, percentualDesconto, valorDesconto, valorFinal
+
+    
+        escreva("Digite o valor da compra (R$): ")
+        leia(valorCompra)
+
+        escreva("Digite o percentual de desconto (%): ")
+        leia(percentualDesconto)
+
+        
+        valorDesconto = valorCompra * (percentualDesconto / 100)
+        valorFinal = valorCompra - valorDesconto
+
+       
+        escreva("\n--- RESULTADO ---\n")
+        escreva("Valor do desconto: R$ ", valorDesconto, "\n")
+        escreva("Valor final da compra: R$ ", valorFinal, "\n") 9 logico maior_de_idade
+===========================================================================================================================================================================================
+  10 inteiro idade
+  
+   escreva("qual a sua idade? ")
+    leia(idade)
+
+    se (idade >= 18)
+{
+			escreva("Pode entrar/participar!")
+		}
+		senao
+		{
+			escreva("Não pode entrar/participar!")
+		}
+    
+  }
+}
+
+==========================================================================================================================================
+ 11 real numero
+
+		
+		escreva("Digite um número: ")
+		leia(numero)
+
+	
+		se (numero > 0)
+		{
+			escreva("O número é positivo!")
+		}
+		senao se (numero < 0)
+		{
+			escreva("O número é negativo!")
+		}
+		senao
+		{
+			escreva("O número é zero (neutro)!")
+==========================================================================================================================================
+12		real numero, x, y
+
+	
+		escreva("Digite o valor inicial do intervalo (X): ")
+		leia(x)
+		
+		escreva("Digite o valor final do intervalo (Y): ")
+		leia(y)
+
+		
+		escreva("Digite o número que deseja verificar: ")
+		leia(numero)
+
+		se (numero >= x e numero <= y)
+		{
+			escreva("O número ", numero, " está DENTRO do intervalo entre ", x, " e ", y, ".")
+		}
+		senao
+		{
+			escreva("O número ", numero, " está FORA do intervalo entre ", x, " e ", y, ".")
+		}
+	}
+  }
+}
+=========================================================================================================================================
+13		logica a, b, resultado
+
+	
+		escreva("Digite o valor para 'a' (verdadeiro/falso): ")
+		leia(a)
+
+		escreva("Digite o valor para 'b' (verdadeiro/falso): ")
+		leia(b)
+
+		
+		resultado = a ou b
+
+	
+		escreva("O resultado de 'a ou b' é: ", resultado)
+==========================================================================================================================================
+ 14 logico a, b, resultado
+
+		escreva("Digite o valor para 'a' (verdadeiro/falso): ")
+		leia(a)
+
+		escreva("Digite o valor para 'b' (verdadeiro/falso): ")
+		leia(b)
+
+		resultado = a ou b
+
+		escreva("O resultado de 'a ou b' é: ", resultado)
+========================================================================================================================================== 
+ 15 logico a, resultado_negado
+	
+		escreva("Digite o valor lógico para 'a' (verdadeiro/falso): ")
+		leia(a)
+		
+		resultado_negado = nao a
+		
+		escreva("O valor negado de 'a' é: ", resultado_negado)
+==========================================================================================================================================
+ 16		logico a, b, c
+		logico resultado1, resultado2, resultado3
+
+	
+		escreva("Digite o valor para 'a' (verdadeiro/falso): ")
+		leia(a)
+
+		escreva("Digite o valor para 'b' (verdadeiro/falso): ")
+		leia(b)
+
+		escreva("Digite o valor para 'c' (verdadeiro/falso): ")
+		leia(c)
+
+	
+		resultado1 = a e b e c
+
+	
+		resultado2 = a ou b ou c
+
+
+		resultado3 = (a e b) ou c
+
+		
+		escreva("\n--- Resultados das Expressões ---")
+		escreva("\nO resultado de (a e b e c) é: ", resultado1)
+		escreva("\nO resultado de (a ou b ou c) é: ", resultado2)
+		escreva("\nO resultado de ((a e b) ou c) é: ", resultado3)
+==========================================================================================================================================
+17	logico a, b
+
+		escreva("A\t\tB\t\tA E B\t\tA OU B\n")
+		escreva("---------------------------------------------------\n")
+
+		
+		a = falso
+		b = falso
+		escreva(a, "\t", b, "\t", (a e b), "\t\t", (a ou b), "\n")
+
+		
+		a = falso
+		b = verdadeiro
+		escreva(a, "\t", b, "\t", (a e b), "\t\t", (a ou b), "\n")
+
+		
+		a = verdadeiro
+		b = falso
+		escreva(a, "\t", b, "\t", (a e b), "\t\t", (a ou b), "\n")
+
+	
+		a = verdadeiro
+		b = verdadeiro
+		escreva(a, "\t", b, "\t", (a e b), "\t\t", (a ou b), "\n")
+==========================================================================================================================================
+18		cadeia nome, cidade
+		inteiro idade
+
+		
+		escreva("Digite o seu nome: ")
+		leia(nome)
+
+		escreva("Digite a sua idade: ")
+		leia(idade)
+
+		escreva("Digite a sua cidade: ")
+		leia(cidade)
+
+		escreva("\nMeu nome é ", nome, ", tenho ", idade, " anos e moro em ", cidade, ".")
+  }
+==========================================================================================================================================
+ 19 cadeia primeiro_nome, sobrenome, nome_usuario
+
+	
+		escreva("Digite o seu primeiro nome: ")
+		leia(primeiro_nome)
+
+		escreva("Digite o seu sobrenome: ")
+		leia(sobrenome)
+
+		nome_usuario = primeiro_nome + sobrenome
+
+	
+		escreva("Seu nome de usuário gerado é: ", nome_usuario)
+
+==========================================================================================================================================
+20	cadeia nome_completo
+		inteiro idade
+		real nota_final
+		caracter genero
+		logico esta_matriculado
+
+		
+		escreva("Digite o nome completo do aluno: ")
+		leia(nome_completo)
+
+		escreva("Digite a idade do aluno: ")
+		leia(idade)
+
+		escreva("Digite a nota final do aluno: ")
+		leia(nota_final)
+
+		escreva("Digite o gênero (M/F/O): ")
+		leia(genero)
+
+		escreva("O aluno está matriculado? (verdadeiro/falso): ")
+		leia(esta_matriculado)
+
+		
+		
+		escreva("\n          FICHA DO ALUNO              ")
+		escreva("\nNome Completo:    ", nome_completo)
+		escreva("\nIdade:            ", idade, " anos")
+		escreva("\nNota Final:       ", nota_final)
+		escreva("\nGênero (Inicial): ", genero)
+		escreva("\nMatriculado?      ", esta_matriculado)
